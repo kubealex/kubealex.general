@@ -1,4 +1,12 @@
-ca_key_passphrase: 
+### CA SECTION ###
+ca_key_passphrase:
 ca_key_path:
-ca_cert_path:
-ca_cn: 
+ca_path:
+ca_cn:
+
+### CUSTOM CERT SECTION ###
+
+cert_path:
+cert_key_path:
+cert_san:
+  -
