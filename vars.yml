@@ -9,4 +9,5 @@ ca_cn:
 cert_path:
 cert_key_path:
 cert_san:
-  -
+  - "DNS:test"
+

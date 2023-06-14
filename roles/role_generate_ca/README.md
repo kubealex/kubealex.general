@@ -1,38 +1,54 @@
 Role Name
 =========
 
-A brief description of the role goes here.
+The `role_generate_ca` role creates a custom Certificate Authority (CA) for self-signing certificates.
 
 Requirements
 ------------
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
+- `community.crypto.openssl_privatekey`: This module requires the `pyOpenSSL` package.
+- `community.crypto.openssl_csr_pipe`: This module requires the `pyOpenSSL` package.
+- `community.crypto.x509_certificate`: This module requires the `cryptography` package.
 
 Role Variables
 --------------
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+| Variable              | Description                                | Default Value   |
+|-----------------------|--------------------------------------------|-----------------|
+| `ca_key_passphrase`   | Passphrase for the CA private key           | `mypassphrase`  |
+| `ca_filename`         | Filename of the CA certificate              | `ca_cert`       |
+| `ca_destination_path` | Destination path for the CA certificate     | `~/generated-certs` |
+| `ca_cn`               | Common Name (CN) for the CA certificate     | `Self Signed CA` |
+| `ca_C`                | Country Name (C) for the CA certificate     | `US`            |
+| `ca_L`                | Locality Name (L) for the CA certificate    | `Galaxy`        |
+| `ca_O`                | Organization Name (O) for the CA certificate | `My Company`   |
+| `ca_OU`               | Organizational Unit Name (OU) for the CA certificate | `My Lab`    |
+| `archive_ca`          | Flag indicating whether to create an archive of the CA certificate | `false` |
+
 
 Dependencies
 ------------
 
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+N/A
 
 Example Playbook
 ----------------
 
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
-    - hosts: servers
+    ---
+    - name: Test role
+      hosts: localhost
       roles:
-         - { role: username.rolename, x: 42 }
+        - kubealex.general.role_generate_ca
+
 
 License
 -------
 
-BSD
+Apache 2.0
 
 Author Information
 ------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+Alessandro Rossi <al.rossi87@gmail.com>
