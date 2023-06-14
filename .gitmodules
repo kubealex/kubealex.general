@@ -1,0 +1,3 @@
+[submodule "roles/role_generate_ca"]
+	path = roles/role_generate_ca
+	url = https://github.com/kubealex/role_generate_ca
