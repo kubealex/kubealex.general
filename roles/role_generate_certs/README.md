@@ -1,4 +1,4 @@
-Role Name
+kubealex.general.role_generate_certs
 =========
 
 The `role_generate_certs` role generates and signs certificates using a Certificate Authority (CA).

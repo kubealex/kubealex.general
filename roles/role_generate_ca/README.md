@@ -1,4 +1,4 @@
-Role Name
+kubealex.general.role_generate_ca
 =========
 
 The `role_generate_ca` role creates a custom Certificate Authority (CA) for self-signing certificates.
