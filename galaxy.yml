@@ -1,6 +1,6 @@
 namespace: kubealex
 name: general
-version: 1.0.0
+version: 1.0.1
 readme: README.md
 authors:
   - Alessandro Rossi <al.rossi87@gmail.com>
