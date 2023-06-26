@@ -1,6 +1,6 @@
 [submodule "roles/role_generate_ca"]
 	path = roles/role_generate_ca
-	url = https://github.com/kubealex/role_generate_ca
+	url = git@github.com:kubealex/kubealex/role_generate_ca
 [submodule "roles/role_generate_certs"]
 	path = roles/role_generate_certs
-	url = https://github.com/kubealex/role_generate_certs
+	url = git@github.com:kubealex/kubealex/role_generate_certs
