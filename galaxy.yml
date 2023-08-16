@@ -1,13 +1,12 @@
 namespace: kubealex
 name: general
-version: 1.0.3
+version: 1.0.4
 readme: README.md
 authors:
   - Alessandro Rossi <al.rossi87@gmail.com>
 description: The purpose of this collection is to group some useful roles and modules that I created during time.
 license:
   - Apache-2.0
-
 
 # A list of tags you want to associate with the collection for indexing/searching. A tag name has the same character
 # requirements as 'namespace' and 'name'
