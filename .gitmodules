@@ -7,3 +7,6 @@
 [submodule "roles/role_aap_controller_setup"]
 	path = roles/role_aap_controller_setup
 	url = git@github.com:kubealex/role_aap_controller_setup.git
+[submodule "roles/role_rhsm_registration"]
+	path = roles/role_rhsm_registration
+	url = git@github.com:kubealex/role-rhsm-registration.git
